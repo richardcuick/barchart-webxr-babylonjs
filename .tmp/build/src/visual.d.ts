@@ -9,7 +9,10 @@ export declare class Visual implements IVisual {
     private textNode;
     private formattingSettings;
     private formattingSettingsService;
+    private canvas;
+    private canvas2;
     constructor(options: VisualConstructorOptions);
+    generateBarChart(): void;
     update(options: VisualUpdateOptions): void;
     /**
      * Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane.
