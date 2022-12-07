@@ -11,8 +11,12 @@ export declare class Visual implements IVisual {
     private formattingSettingsService;
     private canvas;
     private canvas2;
+    private scene;
+    private canvasOption;
     constructor(options: VisualConstructorOptions);
     generateBarChart(): void;
+    create11111(dataArray: any, scene: any): void;
+    transform(data: any): void;
     update(options: VisualUpdateOptions): void;
     /**
      * Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane.
